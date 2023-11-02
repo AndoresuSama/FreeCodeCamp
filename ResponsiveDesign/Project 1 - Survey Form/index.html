@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form Project</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form Project</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <section id="personal-info">
+        <div class="label-box">
+          <label id="name-label" for="name">Name</label>
+        </div>
+        <div>
+          <input id="name" type="text" placeholder="Enter your name" required/>
+        </div>
+        <div class="label-box">
+          <label id="email-label" for="email">Email</label>
+        </div>
+        <div>
+          <input id="email" type="email" placeholder="Enter your email" required/>
+        </div>
+        <div class="label-box">
+          <label id="number-label" for="number">Age (optional)</label>
+        </div>
+        <div>
+          <input id="number" type="number" placeholder="Age" min="15" max="120" required/>
+        </div>
+      </section>
+      <section>
+        <div>
+          <label for="dropdown" class="label-box">Which option best describes your current role?</label>
+        </div>
+        <div>
+          <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <label><input type="radio" value="1" name="recommend" checked/> Definitely</label>
+            <label><input type="radio" value="2" name="recommend"/> Maybe</label>
+            <label><input type="radio" value="3" name="recommend"/> Not sure</label>
+          </fieldset>
+        </div>
+        <div>
+          <label>What would you like to see improved? (Check all that apply)</label>
+        </div>
+        <div class="checkboxes">
+          <label><input type="checkbox" value="1"/> Front-end Projects</label>
+          <label><input type="checkbox" value="2"/> Back-end Projects</label>
+          <label><input type="checkbox" value="3"/> Data Visualization</label>
+          <label><input type="checkbox" value="4"/> Challenges</label>
+          <label><input type="checkbox" value="5"/> Open Source Community</label>
+          <label><input type="checkbox" value="6"/> Gitter help rooms</label>
+          <label><input type="checkbox" value="7"/> Videos</label>
+          <label><input type="checkbox" value="8"/> City Meetups</label>
+          <label><input type="checkbox" value="9"/> Wiki</label>
+          <label><input type="checkbox" value="10"/> Forum</label>
+          <label><input type="checkbox" value="11"/> Additional Courses</label>
+        </div>
+      </section>
+      <section class="comments-section">
+        <label id="comments-label">Any comments or suggestions?</label>
+        <textarea placeholder="Enter your comment here..."></textarea>
+      </section>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
